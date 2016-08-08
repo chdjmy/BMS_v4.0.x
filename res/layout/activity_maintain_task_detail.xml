@@ -1,0 +1,417 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/app_bottom_height" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="维修任务单"
+                        android:textSize="@dimen/label_text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="桥梁名称:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoBridgeName"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content"
+                        android:ems="10" >
+
+                        <requestFocus />
+                    </AutoCompleteTextView>
+
+                    <Button
+                        android:id="@+id/buttonScan"
+                        android:layout_width="46dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/scan" 
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="桥梁编码:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/autoBridgeCode"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="维修任务类型:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <Spinner
+                        android:id="@+id/taskTypeSpinner"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="桩号:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/stake"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="病害名称:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/diseaseName"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="病害部位:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/diseaseLocation"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="病害数量:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/diseaseQuantity"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="病害单位:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/diseaseUnit"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="拟维修方案:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/maintainPlan"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="计划人:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/planner"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="提交日期:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/submitDate"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+				<TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="提交状态:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <Spinner
+                        android:id="@+id/submitSpinner"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="备注:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/bak"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <!-- 维修审核 -->
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="审核状态:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/isverify"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="审核人:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/verifier"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="审核时间:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/verifytime"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="审核意见:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/verifySuggestion"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="维修日期:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/maintainDate"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:visibility="gone" >
+                    <TextView
+                        android:layout_width="@dimen/tabel_width_left"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="是否过期:"
+                        android:textSize="@dimen/table_text_size" />
+
+                    <EditText
+                        android:id="@+id/isold"
+                        android:layout_width="@dimen/tabel_width_right"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+             
+                
+                <!-- 维修材料 -->
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="65dp"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="维修材料"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/buttonMaterialManager"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="60dp"
+                        android:layout_weight="1"
+                        android:text="材料管理"
+                        android:textSize="@dimen/table_text_size" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" >
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutPlanAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" >
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

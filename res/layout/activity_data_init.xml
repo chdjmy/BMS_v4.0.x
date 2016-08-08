@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        android:layout_marginTop="30dp" >
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="30dp"
+                android:gravity="right"
+                android:text="用户信息"
+                android:textSize="@dimen/label_text_size" />
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="@string/init_bridge_info"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="桥梁经常性检查"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="涵洞基本信息"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="涵洞经常性检查"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+		 <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="材料基本信息"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="维修计划"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="维修任务"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="维修验收"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="維修材料"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="养护工程"
+                android:textSize="@dimen/label_text_size" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+        </TableRow>
+        <TableRow
+            android:layout_margin="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp" >
+
+            <Button
+                android:id="@+id/init_btn_back"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue"
+                android:text="@string/main_network_settings"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/label_text_size" />
+
+            <Button
+                android:id="@+id/init_btn_init"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue"
+                android:text="@string/init_btn_native"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/label_text_size" />
+        </TableRow>
+    </TableLayout>
+
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

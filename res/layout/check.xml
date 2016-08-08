@@ -1,0 +1,1519 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 表头 -->
+
+    <TextView
+        android:id="@+id/label_usualexam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/title_activity_usual_exam_detail"
+        android:textSize="@dimen/label_text_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_usualexam"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:background="#000000"
+            android:orientation="vertical" >
+
+            <!-- 管理单位 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="@string/text_manager_uint"
+                    android:textSize="@dimen/list_text_size" />
+
+                <EditText
+                    android:id="@+id/text_culvert_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 路线编码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_line_number"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_line_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_line_name"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_line_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_center_stake"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_center_stake"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 桥梁编码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_bridge_code"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_bridge_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_bridge_name"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_bridge_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_mm_name"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_mm_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 部件名称 缺损类型 缺损范围 养护意见 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_part_name"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_defect_type"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_defect_region"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_maintain_advise"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 翼                     墙 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_wall"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_wall_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_wall_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_wall_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 锥    坡   、护   坡 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_slope"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_slope_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_slope_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_slope_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 桥   台  及  基  础 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_abutment"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_abutment_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_abutment_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_abutment_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 桥   墩  及  基  础 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_pier"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_pier_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_pier_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_pier_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 地     基    冲    刷 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_foundation"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_foundation_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_foundation_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_foundation_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 支                      座 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_supports"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_supports_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_supports_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_supports_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 上部结构异常变形 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_superstructure"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_superstructure_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_superstructure_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_superstructure_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 桥  与   路   连  接 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_approach"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_approach_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_approach_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_approach_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 伸         缩         缝 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_expansion"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_expansion_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_expansion_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_expansion_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 桥     面    铺     装 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_deck"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_deck_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_deck_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_deck_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 人  行  道  、缘 石 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_sidewalk"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_sidewalk_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_sidewalk_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_sidewalk_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 栏    杆   、护   栏 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_guard"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_guard_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_guard_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_guard_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 标    志   、标   线 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_sign"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_sign_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_sign_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_sign_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 排     水    设    施 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_waterproof"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_waterproof_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_waterproof_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_waterproof_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 照     明    系    统 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_lighting"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_lighting_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_lighting_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_lighting_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 桥     面    清    洁 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_clean"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_clean_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_clean_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_clean_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 调   治  构  造  物 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_regulating"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_regulating_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_regulating_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_regulating_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- （     其     他     ） -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_else"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_else_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_else_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_else_advice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 负责人 记录人 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_principal"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_principal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_noter"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_noter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_check_date"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_check_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_login"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

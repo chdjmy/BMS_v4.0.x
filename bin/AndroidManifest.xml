@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bms"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BridgeInfoActivity"
+            android:label="@string/title_activity_bridge_info"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".NetSettingsActivity"
+            android:label="@string/title_activity_net_settings"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".DataSyncActivity"
+            android:label="@string/title_activity_data_sync" >
+        </activity>
+        <activity
+            android:name=".BridgeInfoListActivity"
+            android:label="@string/title_bridgeinfo_list"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".BridgeInfoDetailActivity"
+            android:label="@string/title_bridgeinfo_detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bms.BridgeInfoListActivity" />
+        </activity>
+        <activity
+            android:name=".BridgeUsualExamActivity"
+            android:label="@string/title_activity_bridge_usual_exam"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".UsualExamDetailActivity"
+            android:label="@string/title_activity_usual_exam_detail"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".UsualExamAddActivity"
+            android:label="@string/title_activity_usual_exam_add"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".DataUploadActivity"
+            android:label="@string/title_activity_data_upload" >
+        </activity>
+        <activity
+            android:name=".DataInitActivity"
+            android:label="@string/title_activity_data_init" >
+        </activity>
+        <activity
+            android:name=".CulvertInfoActivity"
+            android:label="@string/title_activity_culvert_info"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".CulvertUsualExamActivity"
+            android:label="@string/title_activity_culvert_usual_exam"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".CulvertUsualExamDetailActivity"
+            android:label="@string/title_activity_culvert_usual_exam_detail"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".MaintainTaskActivity"
+            android:label="@string/title_activity_maintain_task"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".MaintainPlanActivity"
+            android:label="@string/title_activity_maintain_plan"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".PersonalInfoActivity"
+            android:label="@string/title_activity_personal_info" >
+        </activity>
+        <activity
+            android:name="com.mining.app.zxing.view.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.example.photo.activity.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="com.example.photo.activity.GalleryActivity" >
+        </activity>
+        <activity
+            android:name="com.example.photo.activity.AlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MaintainPlanAddActivity"
+            android:label="@string/title_activity_maintain_plan_add"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".MaterialManagerActivity"
+            android:label="@string/title_activity_material_manager" >
+        </activity>
+        <activity
+            android:name=".MaintainTaskDetailActivity"
+            android:label="@string/title_activity_maintain_task_detail" >
+        </activity>
+        <activity
+            android:name=".MaintainCheckActivity"
+            android:label="@string/title_activity_maintain_check"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".MaintainCheckAcceptActivity"
+            android:label="@string/title_activity_maintain_check_accept"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".BridgeProjectActivity"
+            android:label="@string/title_activity_bridge_project"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".ProjectDetailActivity"
+            android:label="@string/title_activity_project_detail" >
+        </activity>
+        
+        <receiver
+            android:name="com.example.download.DownLoadReceive">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+         	</intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

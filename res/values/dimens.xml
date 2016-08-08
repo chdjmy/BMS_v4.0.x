@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen name="app_bottom_height">30dp</dimen>
+     <dimen name="body_padding_left">0dp</dimen>
+     <dimen name="body_padding_right">0dp</dimen>
+     <dimen name="list_text_size">18sp</dimen>
+     <dimen name="label_text_size">24sp</dimen>
+     <dimen name="table_text_size">18sp</dimen><!-- 维修任务表单字体大小 -->
+     <dimen name="tabel_width_left">200dp</dimen><!-- 维修任务表单左侧宽度 -->
+     <dimen name="tabel_width_right">300dp</dimen><!-- 维修任务表单右侧宽度 -->
+     
+     <dimen name="list_item_height">40dp</dimen>
+     <dimen name="text_view_padding">10dp</dimen>
+     <dimen name="view_line_width">1dp</dimen>
+     <dimen name="ui_10_dip">10dip</dimen> 
+     
+</resources>

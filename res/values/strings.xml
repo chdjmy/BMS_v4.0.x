@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公用组件 -->
+    <string name="app_name">互联网+桥梁养护系统</string>
+    <string name="copy_right">CopyRight©酒泉公路局</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 登录页面 -->
+    <string name="login_menu_settings">网络设置</string>
+    <string name="login_menu_init">初始化</string>
+    <string name="login_menu_version">版本检测</string>
+    <string name="login_hint_username">请输入账号</string>
+    <string name="login_text_username">账号</string>
+    <string name="login_hint_password">请输入密码</string>
+    <string name="login_text_password">密码</string>
+    <string name="login_button_enter">登    录</string>
+    <string name="login_button_quit">退    出</string>
+
+    <!-- 网络设置页面 -->
+    <string name="title_activity_net_settings">网络设置</string>
+    <string name="net_ip">域名/IP　</string>
+    <string name="net_port">端口　</string>
+    <string name="net_webapp">接口项目名　</string>
+    <string name="net_timeout">超时设置(s)　</string>
+    <string name="net_btn_save">保存</string>
+    <string name="net_btn_cancel">连接测试</string>
+
+    <!-- 本地资源数据初始化页面 -->
+    <string name="title_activity_data_init">初始化</string>
+    <string name="init_btn_native">初始化</string>
+
+    <!-- 网络数据同步页面 -->
+    <string name="title_activity_data_sync">数据同步</string>
+    <string name="init_btn_init">同步数据</string>
+    <string name="init_btn_back">返回</string>
+    <string name="init_bridge_info">桥梁基本信息</string>
+
+    <!-- 首页 -->
+    <string name="main_bridge_info">桥梁信息</string>
+    <string name="main_bridge_check">桥梁经常性检查</string>
+    <string name="main_bridge_project">养护工程</string>
+    <string name="main_maintenance_check">维修验收</string>
+    <string name="main_culvert_info">涵洞信息</string>
+    <string name="main_culvert_check">涵洞经常性检查</string>
+    <string name="main_maintenance_plan">维修计划</string>
+    <string name="main_maintenance_task">维修任务</string>
+    <string name="main_data_upload">数据上传</string>
+    <string name="main_data_synchronization">数据同步</string>
+    <string name="main_personal_info">我的信息</string>
+    <string name="main_network_settings">网络设置</string>
+    <string name="menu_exit">退出系统</string>
+
+    <!-- 桥梁信息页面 -->
+    <string name="title_activity_bridge_info">桥梁信息</string>
+    <string name="bridge_search_hint">请扫描条码或输入桥梁名称</string>
+    <string name="bridgeCode">桥梁代码</string>
+    <string name="bridgeName">桥梁名称</string>
+    <string name="lineNumber">路线号</string>
+    <string name="lineName">路线名称</string>
+    <string name="lineType">路线类型</string>
+    <string name="locationName">所在地</string>
+    <!-- 桥梁详细信息 -->
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_bridgeinfo_list">BridgeInfo</string>
+    <string name="title_bridgeinfo_detail">BridgeInfo Detail</string>
+
+    <!-- 桥梁经常性检查 -->
+    <string name="title_activity_bridge_usual_exam">桥梁经常性检查</string>
+    <string name="checkDate">检查日期</string>
+    <string name="principal">负责人</string>
+    <string name="noter">记录人</string>
+    <string name="operation">操作</string>
+
+    <!-- 桥梁经常性检查详情 -->
+    <string name="title_activity_usual_exam_detail">桥 梁 经 常 检 查 记 录 表</string>
+    <string name="text_manager_uint">管理单位:</string>
+    <string name="text_line_number">路线编码</string>
+    <string name="text_line_name">路线名称</string>
+    <string name="text_center_stake">桥位桩号</string>
+    <string name="text_bridge_code">桥梁编码</string>
+    <string name="text_bridge_name">桥梁名称</string>
+    <string name="text_mm_name">养护单位</string>
+    <string name="text_part_name">部件名称</string>
+    <string name="text_defect_type">缺损类型</string>
+    <string name="text_defect_region">缺损范围</string>
+    <string name="text_maintain_advise">保养措施意见</string>
+    <string name="text_wall">翼                     墙</string>
+    <string name="text_slope">锥    坡   、护   坡</string>
+    <string name="text_abutment">桥   台  及  基  础</string>
+    <string name="text_pier">桥   墩  及  基  础</string>
+    <string name="text_foundation">地     基    冲    刷</string>
+    <string name="text_supports">支                      座</string>
+    <string name="text_superstructure">上部结构异常变形</string>
+    <string name="text_approach">桥  与   路   连  接</string>
+    <string name="text_expansion">伸         缩         缝</string>
+    <string name="text_deck">桥     面    铺     装</string>
+    <string name="text_sidewalk">人  行  道  、缘 石</string>
+    <string name="text_guard">栏    杆   、护   栏</string>
+    <string name="text_sign">标    志   、标   线</string>
+    <string name="text_waterproof">排     水    设    施</string>
+    <string name="text_lighting">照     明    系    统</string>
+    <string name="text_clean">桥     面    清    洁</string>
+    <string name="text_regulating">调   治  构  造  物</string>
+    <string name="text_else">（     其     他     ）</string>
+    <string name="text_principal">负        责        人</string>
+    <string name="text_noter">记    录    人</string>
+    <string name="text_check_date">检查日期</string>
+
+    <!-- 桥梁经常性检查增加 页面 -->
+    <string name="title_activity_usual_exam_add">桥 梁 经 常 检 查 记 录 表</string>
+    <string name="usual_menu_submit">提 交</string>
+    <string name="usual_menu_change">保存修改</string>
+
+    <!-- 数据提交页面 -->
+    <string name="title_activity_data_upload">数据提交</string>
+    <string name="data_menu_submit">上传数据</string>
+
+    <!-- 涵洞信息页面 -->
+    <string name="title_activity_culvert_info">涵洞信息</string>
+    <string name="culvert_search_hint">请扫描条码或输入涵洞名称</string>
+    <string name="culvertCode">涵洞编号</string>
+    <string name="culvertName">涵洞名称</string>
+
+    <!-- 涵洞经常性检查 -->
+    <string name="title_activity_culvert_usual_exam">涵洞经常检查</string>
+    <string name="title_activity_culvert_usual_exam_detail">涵 洞 经 常 检 查 记 录 表</string>
+
+    <!-- 维修计划 -->
+    <string name="title_activity_maintain_plan">维修计划</string>
+    <string name="maintain_code">维修单号</string>
+    <string name="title_activity_maintain_plan_add">维修计划</string>
+
+    <!-- 维修任务 -->
+    <string name="title_activity_maintain_task">维修任务</string>
+
+    <!-- 用户信息 -->
+    <string name="title_activity_personal_info">用户信息</string>
+
+    <!-- 条码扫描 -->
+    <string name="scan_text">将条形码放入框内, 即可自动扫描</string>
+
+    <!-- 拍照功能 -->
+    <string name="album">相册</string>
+    <string name="camera_cancel">取消</string>
+    <string name="preview">预览</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="finish">完成</string>
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="title_activity_material_manager">材料管理</string>
+    <string name="title_activity_maintain_task_detail">维修任务详情</string>
+    <string name="title_activity_maintain_check">维修验收</string>
+    <string name="title_activity_maintain_check_accept">维修任务验收</string>
+    <string name="title_activity_bridge_project">养护工程</string>
+    <string name="title_activity_project_detail">养护工程详情</string>
+
+</resources>

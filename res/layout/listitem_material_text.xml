@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+     <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/materialName"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="@dimen/list_item_height"
+        android:textColor="#000000"
+        android:gravity="left"
+        android:textSize="@dimen/list_text_size" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/materialUint"
+         android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="@dimen/list_item_height"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="@dimen/list_text_size" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/materialBak"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="@dimen/list_item_height"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="@dimen/list_text_size" />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+    
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+             <CheckBox
+            android:id="@+id/checkBoxMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:text="" />
+   </LinearLayout>
+   
+   <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+    
+    
+
+</LinearLayout>

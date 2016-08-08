@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:baselineAlignBottom="true"
+            android:contentDescription="@null"
+            android:cropToPadding="true"
+            android:src="@drawable/bridge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+         	android:background="#eeeeee"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_width"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp" 
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_bridge_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main1"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_bridge_info"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_bridge_check"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main2"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_bridge_check"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_culvert_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main3"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_culvert_info"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_culvert_check"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main4"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_culvert_check"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_width"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp" 
+                android:layout_weight="1" >
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_bridge_project"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main5"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_bridge_project"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_maintenance_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main6"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_maintenance_plan"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_maintenance_task"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main7"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_maintenance_task"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_maintenance_check"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main8"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_maintenance_check"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_width"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp" 
+                android:layout_weight="1" >
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_data_upload"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main9"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_data_upload"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_data_synchronization"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main10"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_data_synchronization"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_personal_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main11"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_personal_info"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+
+                <TextView
+                    android:id="@+id/main_network_settings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_main"
+                    android:drawableTop="@drawable/main12"
+                    android:gravity="center"
+                    android:padding="@dimen/text_view_padding"
+                    android:text="@string/main_network_settings"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="@dimen/view_line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/view_line" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_width"
+                android:background="@color/view_line" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

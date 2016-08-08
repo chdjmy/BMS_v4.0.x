@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/body_padding_left"
+        android:paddingRight="@dimen/body_padding_right" >
+        
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="#DDDDDD">
+
+            <TextView
+                android:id="@+id/bridgeCode"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="数据上传列表"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listViewDataUploadBridgeUsualExam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <include layout="@layout/app_bottom" />
+</RelativeLayout>

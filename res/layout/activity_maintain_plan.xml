@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        android:orientation="vertical" >
+
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" ><!-- #F5F1E6 -->
+
+            <Button
+                android:id="@+id/buttonScan"
+                android:layout_width="46dp"
+                android:layout_height="38dp"
+				android:layout_marginLeft="14dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginTop="6dp"
+                android:background="@drawable/scan"
+                />
+
+            <RelativeLayout
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                 >
+
+                <EditText
+                    android:id="@+id/editSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:ems="10"
+                    
+                    android:hint="@string/bridge_search_hint" ><!--    	android:background="@drawable/search_bk"-->
+                </EditText>
+
+                <requestFocus />
+
+                <ImageView
+                    android:id="@+id/imageClear"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+           		android:layout_marginRight="22dp"
+           		android:layout_marginLeft="25dp"
+           		android:layout_gravity="center"
+           		android:background="@drawable/btn_search"
+                />
+            
+            <Button
+                android:id="@+id/buttonNewPlan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+           		android:layout_gravity="center"
+           		android:text="新建计划"
+                />
+        </LinearLayout>
+        
+        <!-- 表头 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD" >
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/bridgeCode"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/maintain_code"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/bridgeName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/bridgeName"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/lineNumber"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="提交日期"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/locationName"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="状态"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+        </LinearLayout>
+        
+        <ListView
+        	android:id="@+id/listViewMaintainPlan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>                                                   
+        
+    <!-- 最外层的 -->    
+    </LinearLayout>
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

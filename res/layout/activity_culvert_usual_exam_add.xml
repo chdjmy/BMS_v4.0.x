@@ -1,0 +1,977 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 表头 -->
+
+    <TextView
+        android:id="@+id/label_usualexam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/title_activity_culvert_usual_exam_detail"
+        android:textSize="@dimen/label_text_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_usualexam"
+        android:layout_marginBottom="@dimen/app_bottom_height" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:orientation="vertical" >
+
+            <!-- 涵洞编号 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="涵洞编号"
+                        android:textSize="@dimen/list_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" >
+
+                    <EditText
+                        android:id="@+id/text_culvert_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_add_unable"
+                        android:editable="false"
+                        android:textSize="@dimen/list_text_size" />
+
+                    <EditText
+                        android:id="@+id/text_culvert_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_add_unable"
+                        android:editable="false"
+                        android:textSize="@dimen/list_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 路线编码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_line_number"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_line_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add_unable"
+                    android:editable="false"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_line_name"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_line_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add_unable"
+                    android:editable="false"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="涵洞桩号"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_center_stake"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add_unable"
+                    android:editable="false"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!--养护单位 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="养护单位"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_MM_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add_unable"
+                    android:editable="false"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="涵洞类型"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_culvert_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add_unable"
+                    android:editable="false"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="养护责任人"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_maintain_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add_unable"
+                    android:editable="false"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 部件名称 缺损类型 缺损范围 养护意见 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_part_name"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_defect_type"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_defect_region"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_maintain_advise"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!--进水口-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="进水口"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_inlet_type_disease"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_inlet_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_inlet_advise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!--出水口-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="出水口"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_outlet_type_disease"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_outlet_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_outlet_advise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!--涵身两侧 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="涵身两侧"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_body_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_body_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_body_advise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 涵身顶部 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="涵身顶部"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_top_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_top_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_top_advise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 涵底铺砌 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="涵底铺砌"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_bottom_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_bottom_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_bottom_advise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 涵附近填土 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="涵附近填土"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_fill_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_fill_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_fill_advise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 标志照明 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="标志、照明"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_lighting_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_lighting_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_lighting_advise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+           
+
+            <!-- 其他 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="其他"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_else_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_else_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_else_advise"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 备注 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="备注"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_remark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+
+            <!-- 负责人 记录人 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="主要负责人"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_manager_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="检查人"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_noter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="@string/text_check_date"
+                    android:textSize="@dimen/list_text_size" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/text_check_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_add"
+                    android:textSize="@dimen/list_text_size" />
+            </LinearLayout>
+            <GridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:horizontalSpacing="3dp"
+                android:numColumns="8"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" >
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

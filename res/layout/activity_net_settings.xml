@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        android:layout_marginTop="30dp" >
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/net_ip"
+                android:textSize="@dimen/label_text_size" />
+
+            <EditText
+                android:id="@+id/edit_net_ip"
+                android:layout_width="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_login"
+                android:inputType="text"
+                android:textSize="@dimen/label_text_size" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/net_port"
+                android:textSize="@dimen/label_text_size" />
+
+            <EditText
+                android:id="@+id/edit_net_port"
+                android:layout_width="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_login"
+                android:inputType="text"
+                android:textSize="@dimen/label_text_size" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/net_webapp"
+                android:textSize="@dimen/label_text_size" />
+
+            <EditText
+                android:id="@+id/edit_net_webapp"
+                android:layout_width="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_login"
+                android:inputType="text"
+                android:textSize="@dimen/label_text_size" />
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/net_timeout"
+                android:textSize="@dimen/label_text_size" />
+
+            <EditText
+                android:id="@+id/edit_net_timeout"
+                android:layout_width="0dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_login"
+                android:inputType="text"
+                android:textSize="@dimen/label_text_size" />
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="30dp"
+            >
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle" 
+                android:id="@+id/buttonCancelNet"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_blue"
+                android:textSize="@dimen/label_text_size"
+                android:textColor="@color/btn_text_color"
+                android:text="@string/net_btn_cancel" />
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle" 
+                android:id="@+id/buttonSaveNet"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/label_text_size"
+                android:textColor="@color/btn_text_color"
+                android:background="@drawable/btn_blue"
+                android:layout_marginLeft="10dp"
+                android:text="@string/net_btn_save" />
+        </TableRow>
+    </TableLayout>
+
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

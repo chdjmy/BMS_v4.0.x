@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.chd.bms.LoginActivity" >
+
+    <item
+        android:id="@+id/login_menu_version"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" 
+        android:title="@string/login_menu_version"/>
+
+     <item
+        android:id="@+id/login_menu_init"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" 
+        android:title="@string/login_menu_init"/>
+</menu>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        android:orientation="vertical"
+  
+        android:paddingLeft="@dimen/body_padding_left"
+        android:paddingRight="@dimen/body_padding_right" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+            
+            <Button
+                android:id="@+id/buttonMaterialAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+           		android:layout_gravity="right"
+           		android:text="增加材料"
+                />
+        </LinearLayout>
+		  
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD" >
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+
+            <TextView
+                
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="材料名称"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+
+            <TextView
+                
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="单位"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+
+            <TextView
+                
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+            <TextView
+                
+                android:layout_width="0dp"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="选择"
+                android:textColor="#000000"
+                android:textSize="@dimen/list_text_size" />
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="fill_parent"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+        </LinearLayout>
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5px"
+                android:background="#B8B8B8"
+                android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/listViewMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

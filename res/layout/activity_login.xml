@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="175dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:paddingBottom="10dp" >
+			
+            <EditText
+                android:id="@+id/userNameEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_login"
+                android:hint="@string/login_hint_username"
+                android:inputType="text"
+            	android:text="admin"
+                android:textSize="@dimen/label_text_size"
+                android:paddingLeft="80dp"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:textColor="#ff3f3f3f" />
+
+            <TextView
+                android:id="@+id/textview01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/userNameEdit"
+                android:layout_alignLeft="@+id/userNameEdit"
+                android:layout_alignTop="@+id/userNameEdit"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:text="@string/login_text_username"
+                android:textColor="#ff3f3f3f"
+                android:textSize="@dimen/label_text_size" />
+			
+            <EditText
+                android:id="@+id/passWordEdit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/userNameEdit"
+                android:layout_alignRight="@+id/userNameEdit"
+                android:layout_below="@+id/userNameEdit"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/edit_login"
+                android:hint="@string/login_hint_password"
+                android:inputType="textPassword"
+                android:text="123"
+                android:paddingLeft="80dp"
+                android:saveEnabled="true"
+                android:textSize="@dimen/label_text_size"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textview02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/passWordEdit"
+                android:layout_alignRight="@+id/textview01"
+                android:layout_alignTop="@+id/passWordEdit"
+                android:gravity="center_vertical"
+                android:paddingLeft="7dp"
+                android:text="@string/login_text_password"
+                android:textColor="#ff3f3f3f"
+                android:textSize="@dimen/label_text_size" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textview02"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_blue"
+                android:text="@string/login_button_enter"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/label_text_size" />
+
+        </RelativeLayout>
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="200dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="73dp"
+	    android:baselineAlignBottom="true"
+	    android:contentDescription="@null"
+	    android:cropToPadding="true"
+	    android:src="@drawable/logo" />
+
+</RelativeLayout>

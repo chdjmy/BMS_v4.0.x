@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.chd.bms.UsualExamAddActivity" >
+
+    <item
+        android:id="@+id/usual_menu_submit"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" 
+        android:title="@string/usual_menu_submit"/>
+</menu>
+    
